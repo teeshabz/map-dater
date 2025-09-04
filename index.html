@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Map Dater</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Map Dater</h1>
+    <div id="sectionBadge" class="badge"></div>
+    <div id="progressText"></div>
+
+    <div id="questionArea" class="question"></div>
+    <div id="answersArea" class="answers"></div>
+
+    <div id="resultArea" class="result hidden"></div>
+
+    <div class="controls">
+      <button id="backBtn">Back</button>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+
+  <!-- Scripts: order matters -->
+  <script src="map-dater-decision-tree.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* Reset */
+body, h1, div, button {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+/* Center the app */
+body {
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* App card */
+#app {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 24px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Section badge */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #eee;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+/* Progress */
+#progressText {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+/* Question */
+.question {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+/* Answer buttons */
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.answers button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #4a90e2;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.answers button:hover {
+  background: #357abd;
+}
+
+/* Result area */
+.result {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.result.hidden {
+  display: none;
+}
+
+.result .title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.result .details {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.result .path {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Controls (Back/Restart) */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.controls button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #eee;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.controls button:hover {
+  background: #ddd;
+}
